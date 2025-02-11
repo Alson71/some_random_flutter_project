@@ -1,4 +1,3 @@
-import 'centered.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
@@ -19,7 +18,11 @@ class GradientContainer extends StatelessWidget {
           ],
         ),
       ),
-      child: Centered("Welcome ITEC 315"),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-3.png',
+          width: 200,
+          )),
     );
   }
 }
